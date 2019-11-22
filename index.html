@@ -87,6 +87,40 @@
         background-size: cover;
       }
 
+      .falling-kitty {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 75px;
+        height: 75px;
+
+        margin-left: 100%;
+        transform: rotate(35deg);
+        background-image: url("assets/images/falling-kitty.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        animation-duration: 25s;
+        animation-delay: 5s;
+        animation-name: flyacross;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes flyacross {
+        0% {
+          margin-left: 100%;
+          margin-top: 0%;
+        }
+
+        60%,
+        100% {
+          margin-left: -10%;
+          margin-top: 5%;
+        }
+      }
+
       .column {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -155,6 +189,7 @@
   <body>
     <section class="hero is-primary is-fullheight">
       <div class="hero-body">
+        <div class="falling-kitty"></div>
         <div class="container">
           <div class="columns">
             <div class="column"></div>
