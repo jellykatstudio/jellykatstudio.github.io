@@ -16,7 +16,7 @@
 }
 
 .falling-kitty {
-  position: absolute;
+  position: fixed;
   top: 20%;
   left: 0;
   width: 75px;
