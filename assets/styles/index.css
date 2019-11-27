@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.falling-kitty {
+.falling-comet {
   position: fixed;
   top: 20%;
   left: 0;
@@ -24,7 +24,7 @@
 
   margin-left: -80px;
   transform: rotate(35deg);
-  background-image: url("/assets/images/falling-kitty.gif");
+  background-image: url("/assets/images/comet-falling.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
