@@ -1,0 +1,114 @@
+.hero.is-primary {
+  background-image: linear-gradient(
+    180deg,
+    rgba(69, 16, 129, 1) 1.6%,
+    rgba(154, 58, 127, 1) 40.4%,
+    rgba(242, 173, 78, 1) 73.5%,
+    rgba(250, 209, 152, 1) 99.2%
+  );
+}
+
+.hero-body {
+  background-image: url("/assets/images/clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.falling-kitty {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 75px;
+  height: 75px;
+
+  margin-left: -80px;
+  transform: rotate(35deg);
+  background-image: url("/assets/images/falling-kitty.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation-duration: 25s;
+  animation-delay: 5s;
+  animation-name: flyacross;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flyacross {
+  0% {
+    margin-left: 100%;
+    margin-top: 0%;
+  }
+
+  60%,
+  100% {
+    margin-left: -80px;
+    margin-top: 5%;
+  }
+}
+
+.column {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.box {
+  padding: 0.75rem;
+}
+
+.level .menu-icon {
+  max-width: 25%;
+}
+
+a.has-text-white {
+  color: #f8f8f8 !important;
+}
+
+div.box {
+  background-color: #f8f8f8;
+}
+
+.menu-link {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#primary-links .level {
+  min-width: 110px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#primary-links span,
+#primary-links h1 {
+  color: #6f207c !important;
+}
+
+#primary-links {
+  margin-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#social-links {
+  margin-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  #primary-links {
+    margin-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #social-links {
+    margin-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
